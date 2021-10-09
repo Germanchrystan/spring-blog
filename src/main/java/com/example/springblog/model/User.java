@@ -1,7 +1,10 @@
 package com.example.springblog.model;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
+@Data
 @Entity
 @Table
 public class User {

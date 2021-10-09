@@ -1,6 +1,7 @@
 package com.example.springblog.service;
 
 import com.example.springblog.model.User;
+import com.example.springblog.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -15,8 +16,7 @@ import java.util.Collections;
 public class UserDetailsServiceImp implements UserDetailsService {
 
     @Autowired
-    private userRepository userRepository;
-
+    private UserRepository userRepository;
 
 
     @Override
